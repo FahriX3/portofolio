@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  portofolio-web:
+    build: .
+    container_name: portofolio-v2
+    ports:
+      - "8086:3000"
+    restart: unless-stopped
