@@ -7,30 +7,37 @@ const skills = [
   {
     category: "Bahasa Pemrograman",
     icon: <Code2 className="w-5 h-5" />,
-    items: ["C#", "Python", "Kotlin", "JavaScript", "TypeScript", "C/C++ (Embedded)"],
+    items: ["C#", "Python", "JavaScript", "TypeScript", "C/C++"],
     color: "from-blue-500/20 to-cyan-500/20",
     border: "border-blue-500/30"
   },
   {
     category: "Framework & Engine",
     icon: <Layers className="w-5 h-5" />,
-    items: [".NET", "Next.js", "Laravel", "Flutter", "Unity Engine"],
+    items: [".NET", "Next.js", "Unity Engine"],
     color: "from-purple-500/20 to-pink-500/20",
     border: "border-purple-500/30"
   },
   {
-    category: "Hardware & IoT",
+    category: "IoT & Embedded Systems",
     icon: <Cpu className="w-5 h-5" />,
-    items: ["Desain PCB Kustom", "ESP32", "Raspberry Pi", "ATtiny85", "Integrasi Sensor", "Protokol WebSockets"],
+    items: ["ESP32", "Raspberry Pi", "ATtiny85", "Integrasi Sensor", "Kontrol Servo", "Desain PCB"],
     color: "from-emerald-500/20 to-teal-500/20",
     border: "border-emerald-500/30"
   },
   {
     category: "Tools & Infrastruktur",
     icon: <Wrench className="w-5 h-5" />,
-    items: ["Linux (Ubuntu)", "Docker", "Cloudflare Tunnels", "Unity Version Control", "Klipper Firmware", "Git/GitHub"],
+    items: ["Git/GitHub", "Docker", "Linux Ubuntu", "Cloudflare Tunnels", "Unity Version Control"],
     color: "from-amber-500/20 to-orange-500/20",
     border: "border-amber-500/30"
+  },
+  {
+    category: "Teknologi Lain",
+    icon: <Layers className="w-5 h-5" />,
+    items: ["Kotlin", "Flutter", "Laravel", "Klipper Firmware", "WebSockets"],
+    color: "from-slate-500/20 to-gray-500/20",
+    border: "border-slate-500/30"
   }
 ];
 
@@ -56,7 +63,11 @@ export default function TechStack() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`glass-card p-6 border ${skill.border} hover:bg-slate-800/50 transition-colors`}
+              className={`glass-card p-6 border ${skill.border} hover:bg-slate-800/50 transition-colors ${
+                index === skills.length - 1 && skills.length % 2 !== 0 
+                  ? 'md:col-span-2 md:w-[calc(50%-0.75rem)] md:mx-auto w-full' 
+                  : ''
+              }`}
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className={`p-2 rounded-lg bg-gradient-to-br ${skill.color}`}>

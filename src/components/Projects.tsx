@@ -6,64 +6,84 @@ import Image from 'next/image';
 
 const projects = [
   {
+    title: "SI-GERDU PANDANG",
+    role: "Full-Stack Web Developer",
+    description: "Sistem Informasi Gerakan Terpadu Penanganan Penyakit Tidak Menular. Merancang arsitektur aplikasi web rekam medis tersentralisasi. Mengimplementasikan sistem otorisasi multi-role dan data scoping yang ketat. Mengembangkan alur logika klinis otomatis (automated clinical logic engine) untuk menghitung IMT secara real-time serta mengategorikan tingkat Tensi pasien.",
+    tech: ["Laravel 11.x", "MySQL", "Tailwind CSS", "Alpine.js", "PHP"],
+    media: "/media/SI-GERDU PANDANG.png",
+    mediaType: "image",
+    link: "https://github.com/FahriX3/Si-Gerdu-Pandang",
+    linkType: "github"
+  },
+  {
     title: "Silicoscan – Web-Based Medical Analysis Platform",
-    role: "AI & Full-Stack Engineer",
-    description: "Melakukan training dan optimasi model Computer Vision secara mandiri menggunakan dataset medis, serta fine-tuning parameter untuk akurasi tinggi. Mengembangkan platform web skala produksi dan dashboard administratif resmi (silicoscan.id) untuk integrasi AI ke sistem back-office. Merancang arsitektur pipeline data agar inferensi responsif.",
-    tech: ["Computer Vision", "AI Fine-Tuning", "Full-Stack Web", "Data Pipeline"],
+    role: "Full-stack web developer & AI Developer",
+    description: "Melatih dan melakukan penyesuaian parameter model computer vision menggunakan dataset medis. Mengintegrasikan model AI dengan aplikasi web dan dashboard administratif. Mengembangkan alur pemrosesan data (Pipeline) yang menghubungkan segmentasi (U-Net), inferensi model deteksi (YOLO11), dan penyajian hasil visual ke pengguna.",
+    tech: ["Python", "FastAPI", "YOLO11", "PyTorch", "ONNXRuntime", "MySQL", "OpenCV", "Docker"],
     media: "/media/Silicoscan – Web-Based Medical Analysis Platform.png",
     mediaType: "image",
     link: "https://silicoscan.id",
     linkType: "website"
   },
   {
-    title: "Helpful Trash Bin (Fab Camp Challenge UGM 2024)",
-    role: "Hardware & Programmer Team",
-    description: "Tempat sampah pintar otomatis berbasis sensor kedekatan (proximity) dengan output audio otomatis untuk mengklasifikasikan pemisahan jenis sampah organik dan anorganik. Menjadi salah satu inovasi utama di hadapan BAPPEDA Kulon Progo.",
-    tech: ["Hardware Design", "Proximity Sensor", "Audio Module"],
-    media: "/media/Creating a future waste management system.mp4",
-    mediaType: "video",
-    link: null,
-    linkType: null
-  },
-  {
-    title: "Real-Time Physical AI Robot Head",
-    role: "Systems Integrator",
-    description: "Prototipe sistem robotika modular dengan memisahkan beban kerja komputasi: PC untuk pemrosesan computer vision, serta Raspberry Pi dan ESP32 sebagai penggerak fisik. Komunikasi nirkabel berbasis WebSockets untuk mengirimkan data koordinat pelacakan wajah.",
-    tech: ["Computer Vision", "Raspberry Pi", "ESP32", "WebSockets", "Servo Control"],
-    media: "/media/Real-Time Physical AI Robot Head.mp4",
-    mediaType: "video",
-    link: "https://github.com/FahriX3",
-    linkType: "github"
-  },
-  {
-    title: "i-Fogponic – Smart Aeroponics System",
-    role: "Lead Developer & Hardware Designer",
-    description: "Sistem aeroponik pintar berbasis IoT menggunakan ESP32 untuk otomasi pengondisian lingkungan tanaman berdasarkan pembacaan data sensor DHT11 dan TDS. Data pipeline rendah latensi yang menghubungkan mikrokontroler dengan infrastruktur cloud.",
-    tech: ["ESP32", "IoT", "DHT11", "TDS Sensor", "Cloud Infrastructure"],
-    media: "/media/i-Fogponic – Smart Aeroponics System2.mp4",
-    mediaType: "video",
-    link: "https://github.com/FahriX3",
-    linkType: "github"
-  },
-  {
     title: "Scientist Worst Nightmare",
     role: "Unity Game Developer",
-    description: "Game survival-horror berbasis Unity berfokus pada manajemen sumber daya dan pemecahan masalah logis di laboratorium terisolasi. Mengimplementasikan sistem mekanik game kompleks termasuk kesehatan, stamina, dan inventaris.",
-    tech: ["Unity Engine", "C#", "Game Design", "Unity Version Control"],
+    description: "Mengembangkan gim survival horror berbasis Unity dengan fokus pada pengelolaan sumber daya dan pemecahan masalah dalam lingkungan simulasi laboratorium. Mengimplementasikan logika permainan yang menghubungkan sistem generator listrik, akses pintu, dan mekanisme kondisi permainan.",
+    tech: ["Unity Engine", "C#", "Unity Version Control"],
     media: "/media/Scientist Worst Nightmare.mp4",
     mediaType: "video",
     link: null,
     linkType: null
   },
   {
-    title: "GuardianLink – Personal Security System",
-    role: "Embedded Systems Developer",
-    description: "Arsitektur logika sistem IoT keselamatan personal yang mengintegrasikan fitur pelacakan lokasi otomatis dan perekaman audio real-time untuk memproteksi tenaga lapangan/medis.",
-    tech: ["IoT", "Location Tracking", "Embedded Systems", "Microcontroller"],
+    title: "i-Fogponic – Smart Aeroponics System",
+    role: "IoT Developer",
+    description: "Mengembangkan sistem aeroponik pintar berbasis IoT untuk pemantauan kondisi lingkungan dan otomasi pengelolaan tanaman menggunakan ESP32 (sensor DHT11 dan TDS). Mengimplementasikan alur pengiriman data ke infrastruktur cloud dan mekanisme visualisasi data telemetri secara real-time.",
+    tech: ["ESP32", "C/C++", "DHT11", "RTC", "TDS Sensor", "IoT Telemetry", "Flutter"],
+    media: "/media/i-Fogponic – Smart Aeroponics System2.mp4",
+    mediaType: "video",
+    link: "https://github.com/FahriX3/i-Fogponic-Smart_Indoor_Aeroponics_System",
+    linkType: "github"
+  },
+  {
+    title: "GuardianLink – Personal Safety IoT System",
+    role: "IoT Developer",
+    description: "Merancang sistem keselamatan personal berbasis hybrid (IoT + Aplikasi Android) menggunakan ESP32 sebagai wearable panic button. Mengembangkan aplikasi mobile yang berjalan di latar belakang, dengan alur logika otomatis: mengirim koordinat GPS, perekaman suara, dan data darurat ke Telegram.",
+    tech: ["ESP32", "Piezo Electric", "Flutter"],
     media: "/media/GuardianLink – Personal Safety IoT System2.mp4",
     mediaType: "video",
-    link: "https://github.com/FahriX3",
+    link: "https://github.com/FahriX3/GuardianLink-Personal_Safety_IoT_System",
     linkType: "github"
+  },
+  {
+    title: "Real-Time Physical AI Robot Head",
+    role: "IoT & Systems Integration",
+    description: "Mengembangkan prototipe robotika modular yang mengintegrasikan computer vision, perangkat komputasi, dan sistem embedded. Memisahkan proses komputasi antara PC untuk computer vision serta Raspberry Pi dan ESP32 untuk pengendalian perangkat mekanis secara real-time melalui WebSockets.",
+    tech: ["Computer Vision", "Raspberry Pi", "ESP32", "WebSockets", "Servo Control"],
+    media: "/media/Real-Time Physical AI Robot Head.mp4",
+    mediaType: "video",
+    link: "https://github.com/FahriX3/Real-Time-Physical-AI-Robot-Head",
+    linkType: "github"
+  },
+  {
+    title: "Fingerprint-Absen",
+    role: "IoT Developer",
+    description: "Merancang perangkat keras absensi berbasis IoT menggunakan sensor biometrik sidik jari (AS608) dan ESP32. Mengembangkan arsitektur komunikasi data nirkabel untuk mengirimkan log kehadiran secara real-time. Membangun logika backend untuk mengelola data master pengguna dan mencatat kehadiran otomatis.",
+    tech: ["ESP32", "AS608 Fingerprint Sensor", "C++", "PHP", "Node.js", "MySQL"],
+    media: "/media/Fingerprint-Absen.jpeg",
+    mediaType: "image",
+    link: "https://github.com/FahriX3/fingerprint-absen",
+    linkType: "github"
+  },
+  {
+    title: "Helpful Trash Bin (Fab Camp Challenge UGM 2024)",
+    role: "Hardware & Programmer Team",
+    description: "Merancang arsitektur perangkat keras dan logika program untuk tempat sampah pintar otomatis berbasis sensor kedekatan (proximity). Mengintegrasikan modul output audio otomatis untuk mengklasifikasikan pemisahan jenis sampah organik dan anorganik saat mendeteksi pengguna.",
+    tech: ["ESP32", "C/C++", "HC SR04", "DFPlayer", "Blink"],
+    media: "/media/Creating a future waste management system.mp4",
+    mediaType: "video",
+    link: null,
+    linkType: null
   }
 ];
 

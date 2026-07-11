@@ -50,7 +50,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="text-xl md:text-3xl text-slate-300 font-light mb-8 text-gradient"
         >
-          Software Developer & System Architect
+          Junior Software Developer | AI, IoT & Embedded Systems
         </motion.h2>
 
         <motion.div 

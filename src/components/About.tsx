@@ -26,16 +26,13 @@ export default function About() {
           
           <div className="space-y-4 text-slate-300 leading-relaxed text-lg font-sans">
             <p>
-              Siswa Kelas 11 Pengembangan Perangkat Lunak dan GIM (PPLG) di SMK Negeri 1 Purwokerto
-              dengan spesialisasi di bidang arsitektur sistem, pemrograman multi-stack, dan integrasi
-              hardware/IoT.
+              Siswa kelas XI Program Keahlian Pengembangan Perangkat Lunak dan Gim (PPLG) di SMK Negeri 1 Purwokerto dengan pengalaman praktis dalam pengembangan perangkat lunak, integrasi kecerdasan buatan, Internet of Things (IoT), dan embedded systems.
             </p>
             <p>
-              Berpengalaman sebagai <strong className="text-emerald-400 font-semibold">"Modern Architect"</strong> yang merancang logika inti sistem
-              terdistribusi, otomasi kontrol, serta komunikasi data real-time. Memiliki rekam jejak kompetitif
-              yang solid melalui pencapaian peringkat atas dalam kompetisi software engineering tingkat
-              kabupaten dan provinsi, serta berpengalaman merancang solusi teknologi yang diakui oleh
-              instansi daerah.
+              Berpengalaman mengembangkan aplikasi web, sistem komunikasi data real-time, serta integrasi perangkat keras dan perangkat lunak melalui proyek mandiri dan kompetisi teknologi. Meraih Juara 1 LKS (Lomba Kompetensi Siswa) kategori IT Software Solutions for Business Tingkat Kabupaten Banyumas dan Juara 3 tingkat Provinsi Jawa Tengah.
+            </p>
+            <p>
+              Memiliki minat untuk mengembangkan kompetensi melalui pengalaman kerja industri serta berkontribusi dalam pengembangan solusi teknologi pada lingkungan industri.
             </p>
           </div>
         </motion.div>

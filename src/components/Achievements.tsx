@@ -6,27 +6,17 @@ import { Award, GraduationCap, Trophy } from 'lucide-react';
 const achievements = [
   {
     title: "Juara 1 – IT Software Solutions for Business",
-    event: "LKS Tingkat Kabupaten (Awal 2026)",
+    event: "Lomba Kompetensi Siswa (LKS) Tingkat Kabupaten Banyumas, 2026",
     icon: <Trophy className="w-6 h-6 text-yellow-400" />
   },
   {
     title: "Juara 3 – IT Software Solutions for Business",
-    event: "LKS Tingkat Provinsi (Awal 2026)",
+    event: "Lomba Kompetensi Siswa (LKS) Tingkat Provinsi Jawa Tengah, 2026",
     icon: <Trophy className="w-6 h-6 text-yellow-600" />
   },
   {
     title: "Selected Innovator & Presenter",
-    event: "Mempresentasikan proyek \"Helpful Trash Bin\" di depan BAPPEDA Kulon Progo pada Fab Camp Challenge (SV UGM, 2024)",
-    icon: <Award className="w-6 h-6 text-emerald-400" />
-  },
-  {
-    title: "Sertifikat Kepesertaan & Kolaborasi Teknis",
-    event: "Fab Camp Challenge 2024, Universitas Gadjah Mada",
-    icon: <Award className="w-6 h-6 text-emerald-400" />
-  },
-  {
-    title: "Evaluasi Teknis & Pelaporan Industri",
-    event: "Menyelesaikan analisis kejuruan dalam kunjungan industri di Perusahaan Game Agate (April 2026)",
+    event: "Fab Camp Challenge Universitas Gadjah Mada 2024. Terpilih untuk mempresentasikan proyek Helpful Trash Bin di hadapan BAPPEDA Kabupaten Kulon Progo.",
     icon: <Award className="w-6 h-6 text-emerald-400" />
   }
 ];
@@ -71,7 +61,7 @@ export default function Achievements() {
             </div>
           </div>
 
-          {/* Education */}
+          {/* Education & Internship */}
           <div className="w-full md:w-1/3">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -86,19 +76,35 @@ export default function Achievements() {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="glass-card p-8 border-t-4 border-t-emerald-500 relative overflow-hidden"
+              className="glass-card p-8 border-t-4 border-t-emerald-500 relative overflow-hidden mb-8"
             >
               <div className="absolute -right-6 -top-6 text-slate-800/50">
                 <GraduationCap className="w-32 h-32" />
               </div>
               <div className="relative z-10">
                 <h3 className="text-xl font-bold text-slate-100 mb-2">SMK Negeri 1 Purwokerto</h3>
-                <p className="text-emerald-400 font-medium mb-4">Pengembangan Perangkat Lunak dan GIM (PPLG)</p>
+                <p className="text-emerald-400 font-medium mb-4">Pengembangan Perangkat Lunak dan Gim (PPLG)</p>
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-slate-900 rounded-full border border-slate-700/50 text-sm text-slate-300">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  2024 – Sekarang (Kelas 11)
+                  2024 – Sekarang (Kelas XI)
                 </div>
               </div>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="glass-card p-6 border border-emerald-500/30 bg-emerald-950/20"
+            >
+              <h3 className="text-lg font-bold text-slate-100 mb-2">Ketersediaan Magang</h3>
+              <p className="text-sm text-slate-300 mb-3">Terbuka untuk magang industri pada periode <strong className="text-emerald-400">Desember 2026 – Maret 2027</strong></p>
+              <p className="text-sm text-slate-400 mb-2">Bersedia magang secara on-site maupun hybrid di bidang:</p>
+              <ul className="text-sm text-slate-300 space-y-1 list-disc list-inside">
+                <li>Software Development</li>
+                <li>AI / Machine Learning</li>
+                <li>IoT / Embedded Systems</li>
+              </ul>
             </motion.div>
           </div>
 
