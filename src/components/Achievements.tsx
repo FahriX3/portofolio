@@ -16,7 +16,7 @@ const achievements = [
   },
   {
     title: "Selected Innovator & Presenter",
-    event: "Fab Camp Challenge Universitas Gadjah Mada 2024. Terpilih untuk mempresentasikan proyek Helpful Trash Bin di hadapan BAPPEDA Kabupaten Kulon Progo.",
+    event: "Fab Camp Challenge Universitas Gadjah Mada 2024. Terpilih untuk mempresentasikan proyek Helpful Trash Bin di hadapan perwakilan UGM, Fab Lab Jogja, Fab Lab International dan BAPPEDA Kulon Progo.",
     icon: <Award className="w-6 h-6 text-emerald-400" />
   }
 ];
