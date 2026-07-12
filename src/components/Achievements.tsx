@@ -104,7 +104,18 @@ export default function Achievements() {
                 <li>Software Development</li>
                 <li>AI / Machine Learning</li>
                 <li>IoT / Embedded Systems</li>
+                <li>Kerjasama Proyek, Penelitian</li>
               </ul>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="glass-card p-6 border border-emerald-500/30 bg-emerald-950/20 mt-6"
+            >
+              <h3 className="text-lg font-bold text-slate-100 mb-2 uppercase text-sm tracking-wider">Ketersediaan Remote Work</h3>
+              <p className="text-sm text-slate-300">Terbuka untuk remote work, kolaborasi proyek, dan penelitian dengan jam kerja fleksibel (di luar jam sekolah).</p>
             </motion.div>
           </div>
 
